@@ -45,3 +45,37 @@
 .cartDetalis-info p{
     border-top: 1px solid #999;
 }
+
+.imgSlider{
+    height: 450px;
+    border-radius: 20px;
+}
+
+.titleSlider{
+    height: 50px;
+    border-radius: 20px;
+    line-height: 40px;
+    border: 1px solid #333;
+    background: #00000082;
+    color: #fff;
+    transition: all 1s;
+}
+
+.titleSlider:hover{
+    cursor: pointer;
+    background: #000000a8;
+    transform: scale(1.2) rotateY(-45deg);
+}
+
+.sliderTitr{
+    background:-moz-linear-gradient(20deg, #0078FFE6 0%, #A000A0D4 100%); 
+    background:-webkit-linear-gradient(20deg, #0078FFE6 0%, #A000A0D4 100%);
+    background:-o-linear-gradient(20deg, #0078FFE6 0%, #A000A0D4 100%);
+    background:linear-gradient(20deg, #0078FFE6 0%, #A000A0D4 100%);
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
