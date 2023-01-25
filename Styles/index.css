@@ -1,0 +1,8 @@
+.shop-present{
+    border-radius: 15px;
+}
+
+.shop-present h2{
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #999;
+}

@@ -20,11 +20,11 @@
     <!-- Header CSS -->
     <link rel="stylesheet" href="Styles/index.css">
 
-    <title>Interesting but strange</title>
+    <title>RC - shop</title>
 </head>
 
 <body>
-    <header class="container">
+    <header class="container-md container-fluid">
         <section id="header">
             <input type="checkbox" id="nav-toggle" class="Checkbox" />
             <label for="nav-toggle" class="button">
@@ -36,13 +36,39 @@
                 <li class="header__item">
                     <a href="./index.html">Home</a>
                 </li>
+                <li class="header__item">
+                    <span id="shoppingCart">
+                        Shopping Cart
+                        <i class="bi bi-cart4"></i>
+                    </span>
+                </li>
             </ul>
             <div class="header__brand">
                 <img src="Assets/Logo.png" title="RC" alt="RC" />
             </div>
         </section>
     </header>
-    
+
+    <main class="container-fluid">
+        <section class="d-flex justify-content-around align-items-center flex-wrap">
+
+            <div class="mt-sm-5 col-md-6">
+                <img class="col-12" src="Assets/onlineShop.jpg" alt="Online Shop" title="Online Shop">
+            </div>
+            <div class="shop-present col-md-5 py-4">
+                <h2 class="text-capitalize text-center">RC - Shop <i class="bi bi-shop"></i></h2>
+                <p class="text-center px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsum at
+                    quidem ipsam iure qui
+                    nostrum ducimus necessitatibus, fugiat, unde sint minus suscipit, repellendus beatae impedit maxime
+                    adipisci est earum!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, dolore quisquam. Ipsum magnam officiis
+                    </p>
+                <p class="text-center">
+                    <a href="#" class="btn btn-outline-danger">Start Shopping <i class="bi bi-box2-heart-fill"></i> </a>
+                </p>
+            </div>
+        </section>
+    </main>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">

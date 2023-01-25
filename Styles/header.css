@@ -106,3 +106,7 @@
         transform: rotate(-45deg) translate(15px, 8px);
     }
 }
+
+#shoppingCart{
+    cursor: pointer;
+}
