@@ -6,3 +6,38 @@
     padding-bottom: 10px;
     border-bottom: 1px dotted #999;
 }
+
+.whyUs{
+    margin: 30px 0px;
+    text-align: center;
+}
+
+.whyUs span{
+    height: 10px;
+    border-radius: 20px;
+    background: #ff4400bf;
+}
+
+.whyUs span:nth-child(1){
+    background: #892be29b;
+}
+
+.cartDetalis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px #1b1b1bc9;
+    margin: 10px;
+}
+
+.cartDetalis-info{
+    text-align:center;
+}
+
+.cartDetalis-info p{
+    border-top: 1px solid #999;
+}
