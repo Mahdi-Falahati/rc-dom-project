@@ -1,0 +1,108 @@
+#header {
+    width: 100%;
+    border-bottom: 1px solid #757575b8;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header_items {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header__item {
+    width: 100px;
+    font-size: 17px;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 20px;
+}
+
+.header__item a {
+    color: #000;
+    text-decoration: none;
+}
+
+.header__brand {
+    margin-left: auto;
+    padding: 0px 15px;
+}
+
+/* burger Menu */
+.Checkbox {
+    display: none;
+}
+
+@media only screen and (max-width:570px) {
+    .header_items {
+        display: none;
+    }
+
+    .button {
+        position: relative;
+        width: 50px;
+        height: 37px;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+
+    .button>span:nth-child(1),
+    .button>span:nth-child(2),
+    .button>span:nth-child(3) {
+        position: absolute;
+        height: 7px;
+        border-radius: 20px;
+        transition: all 0.5s;
+        animation: textAnim 2s infinite alternate;
+    }
+
+    .button>span:nth-child(1) {
+        width: 100%;
+        background: linear-gradient(30deg, #43bece, #800080);
+        top: 0%;
+    }
+    
+    .button>span:nth-child(2) {
+        width: 45%;
+        background: linear-gradient(30deg, #8965ec, #130048);
+        top: 15px;
+    }
+
+    .button>span:nth-child(3) {
+        width: 70%;
+        background: linear-gradient(30deg, #004cff, #ff0364);
+        bottom: 0%;
+    }
+
+    .Checkbox:checked~.header_items {
+        top: 72px;
+        display: inline-block;
+        width: 100wh;
+        height: calc(100vh - 72px);
+        background: #fff;
+        z-index: 10;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Checkbox:checked+.button>span:nth-child(1) {
+        width: 100%;
+        transform: rotate(45deg) translate(20px, 0px);
+    }
+
+    .Checkbox:checked+.button>span:nth-child(2) {
+        width: 50%;
+        transform: rotate(-45deg) translate(35px, 18px);
+    }
+
+    .Checkbox:checked+.button>span:nth-child(3) {
+        width: 50%;
+        transform: rotate(-45deg) translate(15px, 8px);
+    }
+}
