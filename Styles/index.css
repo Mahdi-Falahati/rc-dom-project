@@ -2,6 +2,10 @@
     border-radius: 15px;
 }
 
+.btn-presantation{
+    width: 160px;
+}
+
 .shop-present h2{
     padding-bottom: 10px;
     border-bottom: 1px dotted #999;
@@ -19,7 +23,7 @@
 }
 
 .whyUs span:nth-child(1){
-    background: #892be29b;
+    background: #0b3ee79b;
 }
 
 .cartDetalis{
