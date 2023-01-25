@@ -80,6 +80,10 @@
     font-weight: bold;
 }
 
+#aboutUs{
+    margin: 10px;
+}
+
 .aboutUs{
     box-shadow:inset 0px 0px 7px rgb(7, 0, 41);
     padding: 30px 10px;
