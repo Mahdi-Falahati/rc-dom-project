@@ -79,3 +79,9 @@
     letter-spacing: 2px;
     font-weight: bold;
 }
+
+.aboutUs{
+    box-shadow:inset 0px 0px 7px rgb(7, 0, 41);
+    padding: 30px 10px;
+    border-radius: 15px;
+}
