@@ -54,7 +54,9 @@ window.addEventListener("load", async () => {
             <img src="${product.thumbnail}"
                 class="shop_card-img mx-2 card-img-top" alt="iphone">
             <div class="card-body">
-            <h5 class="text-center text-capitalize text-nowrap overflow-hidden">${product.title}</h3>
+            <h5 class="text-center text-capitalize text-nowrap my-3 overflow-hidden">
+            ${product.title}
+            </h5>
                 <div class="d-flex flex-row justify-content-between align-items-center">
                     <span class="badge bg-secondary">${product.brand}</span>
                     <span class="badge bg-danger">${product.category}</span>
@@ -77,6 +79,7 @@ window.addEventListener("load", async () => {
                     <a href="#">
                         <small class="badge bg-success">Buy</small>
                         <img src="Assets/icons/basketIcon.png" alt="basket icon"> 
+                        <span class="badge bg-danger">${product.stock}</span>
                     </a>
                 </p>
             </section>
