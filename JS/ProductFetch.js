@@ -14,14 +14,38 @@ window.addEventListener("load", async () => {
 
     cardProducts.innerHTML = spiner;
 
-    // fetch data from server
-    const fetchData = await fetch("https://dummyjson.com/products");
-    // parse data to json
-    const response = await fetchData.json();
-    const products = response.products;
+    // defiend variable
+    let notValid = false;
+    let fetchData;
+    let response;
+    let products;
+
+    try {
+        // fetch data from server
+        fetchData = await fetch("https://dummyjson.com/products");
+        // parse data to json
+        response = await fetchData.json();
+        products = response.products;
+        if (fetchData.status != 200) {
+            throw new Error();
+        }
+    } catch (error) {
+        notValid = true;
+    }
 
     setTimeout(() => {
         cardProducts.innerHTML = "";
+
+        if (notValid) {
+            cardProducts.innerHTML = ` 
+                <div class="text-light bg-danger text-capitalize text-center col-12 py-2 px-4">
+                    <i class="bi mx-2 bi-info-circle-fill"></i>
+                        sorry !! <br>some problem to get data from server ......):
+                    </div>
+            `;
+            return;
+        }
+
         // show data on the page
         // loop on prducts
         products.forEach((product) => {
