@@ -20,12 +20,35 @@
     text-align: center;
     white-space: nowrap;
     margin-top: 20px;
+    margin-left: 15px;
 }
 
 .header__item a {
+    transition: all 1s;
+    position: relative;
     color: #000;
     text-decoration: none;
+    padding-bottom: 10px;
 }
+
+.header__item a::after {
+    content: "";
+    transition: all 1s;
+    display: block;
+    position: absolute;
+    height: 4px;
+    left: 50%;
+    bottom: 0%;
+    right: 50%;
+    background: linear-gradient(30deg, #004cff, #ff0364);
+    border-radius: 20px;
+}
+
+.header__item a:hover::after {
+    right: 0%;
+    left: 0%;
+}
+
 
 .header__brand {
     margin-left: auto;
@@ -65,7 +88,7 @@
         background: linear-gradient(30deg, #43bece, #800080);
         top: 0%;
     }
-    
+
     .button>span:nth-child(2) {
         width: 45%;
         background: linear-gradient(30deg, #8965ec, #130048);
@@ -107,6 +130,6 @@
     }
 }
 
-#shoppingCart{
+#shoppingCart {
     cursor: pointer;
 }
