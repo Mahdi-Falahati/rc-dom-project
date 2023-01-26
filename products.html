@@ -49,14 +49,14 @@
         </section>
     </header>
 
-    <main>
+    <main class="container-fluid">
         <div class="my-4 d-flex justify-content-center align-items-center flex-wrap flex-column-reverse flex-md-row">
             <!-- Slider -->
             <h5 class="text-capitalize text-success p-3">
                 <i class="bi bi-arrow-return-right"></i>
-                products Brands 
+                products Brands
             </h5>
-            <section class="col-11 col-sm-8 col-md-5 col-lg-4 my-5">
+            <section class="col-11 col-sm-8 col-md-5 col-lg-3 my-5">
                 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -118,6 +118,44 @@
             <!-- end of Slider -->
         </div>
 
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <section class="container Products d-flex justify-content-around align-items-center flex-wrap">
+                <span class="col-12 col-md-5"></span>
+                <h4 class="col-12 col-md-2 my-3"> <i class="bi bi-shop"></i> Products </h4>
+                <span class="col-12 col-md-5"></span>
+            </section>
+
+            <div id="shop_cards" class="d-flex justify-content-around align-items-center flex-wrap my-4">
+                <section class="shop_card card">
+                    <img src="https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+                        class="shop_card-img mx-2 card-img-top" alt="iphone">
+                    <div class="card-body">
+                        <h3 class="text-center text-capitalize">iPhone 9</h3>
+                        <span class="badge bg-danger">smartphones</span>
+                    </div>
+                    <section class="border-top border-primary d-flex py-2 justify-content-around align-items-center">
+                        <span>Price : 99</span>
+                        <div class="ratings">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                    </section>
+
+                    <section class="d-flex flex-column justify-content-between align-items-center content-show">
+                        <p class="text-light px-3 mt-3">An apple mobile which is nothing like apple</p>
+                        <p class="shop-basket border-top text-center border-warning p-1">
+                            <a href="#">
+                                <small class="badge bg-success">Buy</small>
+                                <img src="Assets/icons/basketIcon.png" alt="basket icon"> 
+                            </a>
+                        </p>
+                    </section>
+                </section>
+            </div>
+        </div>
 
     </main>
 
