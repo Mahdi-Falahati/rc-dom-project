@@ -89,3 +89,10 @@
     padding: 30px 10px;
     border-radius: 15px;
 }
+
+.pattern{
+    background-image: url("../Assets/pattern.jpg");
+    background-size: contain;
+    height: 80px;
+    border-radius: 15px;
+}
