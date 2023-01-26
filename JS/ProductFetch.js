@@ -6,8 +6,11 @@ window.addEventListener("load", async () => {
     const response = await fetchData.json();
     const products = response.products;
 
+    // get tag with id "shop_cards"
     const cardProducts = document.querySelector("#shop_cards");
+    
     // show data on the page
+    // loop on prducts
     products.forEach((product) => {
         const card = `
         <section class="shop_card card my-3" id="${product.id}">
@@ -23,11 +26,11 @@ window.addEventListener("load", async () => {
         <section class="border-top border-primary d-flex py-2 justify-content-around align-items-center">
             <span>Price : ${product.price} $</span>
             <div class="ratings">
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
+                <i class="bi bi-star-half raitingColor"></i>
+                <i class="bi bi-star-half raitingColor"></i>
+                <i class="bi bi-star-half raitingColor"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star-half"></i>
             </div>
         </section>
 
