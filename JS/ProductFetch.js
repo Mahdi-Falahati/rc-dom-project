@@ -24,7 +24,7 @@ window.addEventListener("load", async () => {
             </div>
         </div>
         <section class="border-top border-primary d-flex py-2 justify-content-around align-items-center">
-            <span>Price : ${product.price} $</span>
+            <span class="text-secondary">Price $${product.price}</span>
             <div class="ratings">
                 <i class="bi bi-star-half raitingColor"></i>
                 <i class="bi bi-star-half raitingColor"></i>
